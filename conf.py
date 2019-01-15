@@ -81,6 +81,8 @@ PLUGINS = [
     'shortener', 'blur_thumbnails', 'service_worker', 'bundler_cache_busting'
 ]
 
+GITHUB_USER = ''
+
 SITEMAP = {
     'format': 'xml',
     'priorities': {
