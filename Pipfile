@@ -15,18 +15,9 @@ pillow = "*"
 
 [scripts]
 download-theme = "git clone -b master --single-branch 'https://github.com/ELC/MinimalXYZ.git' theme"
-download-content = "git clone -b master --single-branch 'https://github.com/ELC/elc.github.io-content.git' aux"
+download-content = "git clone -b master --single-branch 'https://github.com/ZamAckerman/zamackerman.github.io-content.git' aux"
 move-content = "cp -r aux/. content"
 build = "pelican -s conf.py -o output -t theme content"
-
-
-copy-windows-theme = 'xcopy /E /I /Y /Q "D:\Repositories\personal\MinimalXYZ" theme\ '
-copy-windows-content = 'xcopy /E /I /Y /Q "D:\Repositories\personal\elc.github.io-content" content\ '
-
-
-test = 'pelican -s conf.py -o output -t theme content'
-test-theme = "pelican -s conf.py -o output -t theme-dev content"
-
 
 [requires]
 python_version = "3.6"

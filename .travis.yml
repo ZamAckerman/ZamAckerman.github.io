@@ -22,7 +22,7 @@ script: pipenv run invoke build
 
 deploy:
   provider: pages
-  repo: elc/elc.github.io
+  repo: ZamAckerman/ZamAckerman.github.io
   target_branch: master
   skip_cleanup: true
   local_dir: output

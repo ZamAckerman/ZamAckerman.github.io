@@ -14,19 +14,19 @@ ENVIRONMENT = os.environ.get('ENVIRONMENT', None)
 RELATIVE_URLS = False
 
 if ENVIRONMENT == 'PRODUCTION':
-    SITEURL = 'https://elc.github.io'
+    SITEURL = 'https://ZamAckerman.github.io'
 elif ENVIRONMENT == 'DEVELOPMENT':
-    SITEURL = 'https://elcweb.netlify.com'
+    SITEURL = 'https://ZamAckerman.github.io'
 else:
-    SITEURL = 'http://localhost:5500'
+    SITEURL = 'https://ZamAckerman.github.io'
     RELATIVE_URLS = True
 
-AUTHOR = 'Ezequiel Leonardo Castaño'
+AUTHOR = 'Zam Ackerman'
 AUTHOR_EMAIL = 'skielcast@gmail.com'
-AUTHOR_AVATAR = r'https://i.imgur.com/6xypjCl.png'
-SITESUBTITLE = 'Ezequiel Leonardo Castaño Personal Website - In this website you will find post about christianity, programming and math'
-SITENAME = 'Ezequiel Leonardo Castaño Personal Website'
-SITEIMAGE = r'https://i.imgur.com/6xypjCl.png'
+AUTHOR_AVATAR = r''
+SITESUBTITLE = 'Zam Ackerman Personal Website'
+SITENAME = 'Zam Ackerman Personal Website'
+SITEIMAGE = r''
 DELETE_OUTPUT_DIRECTORY = True
 PATH = 'content'
 TIMEZONE = 'America/Argentina/Buenos_Aires'
@@ -56,7 +56,7 @@ EXTRA_PATH_METADATA = {
 # Feed
 
 FEED_DOMAIN = 'http://feeds.feedburner.com'
-FEED_ALL_ATOM  = 'ELCWEB'
+FEED_ALL_ATOM  = 'ZAMACK'
 FEED_ATOM  = 'feeds/all.atom.xml'
 
 
@@ -95,15 +95,6 @@ SITEMAP = {
     }
 }
 
-# GITHUB Plugins
-
-GITHUB_USER = 'ELC'
-STABLE_REPOS = ['comparisons',
-                'utn-genetic-algorithms',
-                'utn-java-final-assignment',
-                'utn-java-final-assignment-web',
-                'ML-Tutorial']
-
 # ERT
 
 ERT_WPM = 150
@@ -121,11 +112,11 @@ LANG_MESSAGES = {
 
 # Directories Layout
 
-USE_FOLDER_AS_CATEGORY = False
+USE_FOLDER_AS_CATEGORY = True
 
 # UI
 
-DISPLAY_CATEGORIES_ON_MENU = False
+DISPLAY_CATEGORIES_ON_MENU = True
 
 # URL Settings
 
@@ -165,17 +156,15 @@ CATEGORIES_SAVE_AS  = 'categories/index.html'
 # Blogroll 
 
 if ENVIRONMENT == 'PRODUCTION':
-    DISQUS_SITENAME = 'elcgweb'
-    GOOGLE_ANALYTICS = 'UA-71773079-3'
+    DISQUS_SITENAME = 'zam-ackerman'
+    GOOGLE_ANALYTICS = 'UA-71773079-4'
 else:
     DISQUS_SITENAME = ''
     GOOGLE_ANALYTICS = ''
 
 SOCIAL = (
-    ('twitter', 'https://twitter.com/eze_leo_'),
-    ('github', 'https://github.com/ELC'),
-    ('facebook', 'https://facebook.com/ezecast'),
-    ('envelope', 'mailto:skielcast@gmail.com'),
+    ('twitter', 'https://twitter.com/zam_ackerman'),
+    ('envelope', 'mailto:zamackerman@gmail.com'),
 )
 
 # Shortener
